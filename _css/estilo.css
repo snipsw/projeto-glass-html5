@@ -1,94 +1,118 @@
-@charset "utf-8";
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web);
+
+@font-face {
+    font-family: 'FonteLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
 
 body {
- font-family: Arial,sans-serife;
- background-color: #dddddd;
- color: rgba(0, 0, 0, 1);
+    font-family: Arial, sans-serife;
+    background-color: #dddddd;
+    color: rgba(0, 0, 0, 1);
 }
 
 div#interface {
     width: 1000px;
     background-color: #ffffff;
     margin: -20px auto 0px auto;
-    box-shadow: 0px 0px 10px rgba(0,0,0, .5);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-p{
-  text-align: justify;
-  text-indent: 50px;
+p {
+    text-align: justify;
+    text-indent: 50px;
 }
+
 /*Formatação de imagens com legendas*/
-
-figure.foto-legenda {
-  position: relative;
-  border: 8px solid white;
-  box-shadow: 1px 1px 4px black ;
+/* Até está certo */
+/* esses são para mudar o menu. tirar do tipo link */
+a {
+    color: #606060;
+    text-decoration: none;
 }
 
-figure.foto-legenda img {
-  width: 100%;
-  height: 100%;
+a:hover {
+    text-decoration: underline;
 }
 
-figure.foto-legenda figcaption {
-  opacity: 0;
-  position: absolute;
-  top: 0px;
-  opacity: 0;
-  background-color:rgba(0, 0, 0, .4);
-  color: white;
-  width: 100%;
-  height: 100%;   
-  padding: 10px;
-  box-sizing: border-box;
-  transition: opacity 1s;
+/* essa parte é para a div header -> cabeçalho */
+header#cabecalho img#icone {
+    position: absolute;
+    left: 920px;
+    top: 82px;
 }
 
-figure.foto-legenda:hover figcaption {
-  opacity: 1;
+header#cabecalho {
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
 }
-/* Formatação do menu*/
 
-nav#menu { 
-  display: block;
+header#cabecalho h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    font-weight: normal;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2 {
+    font-family: 'Titillium Web', sans-serif;
+    color: #888888;
+    font-size: 15pt;
+    font-weight: normal;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+/*  */
+/* Formatação do Menu */
+
+nav#menu {
+    display: block;
 }
 
 nav#menu ul {
-  list-style: none;
-  text-transform: uppercase;
-  position: absolute;
-  top: -20px;
-  left: 450px;
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 450px;
 }
+
 nav#menu li {
-  display: inline-block;
-  background-color:#dddddd;
-  padding: 10px;
-  margin: 10px;
-  -webkit-transition: backgroud-color 1s;
-  -moz-transition: background-color 1s;
-  -o-transition: background-color 1s;
-  -ms-transition: backgroud-color 1s;
-  transition: backgrond-color 1s;
-} 
-
-nav#menu li:hover {
-  background-color: #606060;
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 1px;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+    transition: background-color 1s;
 }
 
-nav#menu h1{
-  display: none;
+nav#menu li:hover {   /* isso aqui <nav id="menu"> corresponde a isso -> nav#menu */
+    background-color: #606060;
+}
+
+nav#menu h1 {
+    display: none;
 }
 
 nav#menu a {
-  color: #000000;
-  text-decoration: none;
+    color: #000000;
+    text-decoration: none;
 }
+
 nav#menu a:hover {
-    color:#ffffff;
+    color: #ffffff;
     text-decoration: underline;
 }
