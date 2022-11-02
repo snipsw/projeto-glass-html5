@@ -40,11 +40,11 @@ a:hover {
     text-decoration: underline;
 }
 
-/* essa parte é para a div header -> cabeçalho */
-header#cabecalho img#icone {
+
+header#cabecalho img#icone { 
     position: absolute;
-    left: 920px;
-    top: 82px;
+    left: 1170px;   
+    top: 70px;
 }
 
 header#cabecalho {
@@ -99,7 +99,7 @@ nav#menu li {
     transition: background-color 1s;
 }
 
-nav#menu li:hover {   /* isso aqui <nav id="menu"> corresponde a isso -> nav#menu */
+nav#menu li:hover {
     background-color: #606060;
 }
 
